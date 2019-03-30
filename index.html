@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+
+        #tab777 .buttonXI {
+            background-image: url('selectbuttonMenu.png');
+            height: 60px;
+        }
+
+        #tab778 .buttonXI {
+            height: 30px;
+            width: 100px;
+            background-image: url('BlueButton.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #tab779 .buttonXI {
+            height: 30px;
+            width: 100px;
+            background-color:blue;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .buttonXI {
+            color: white;
+            border: 2px none red;
+        }
+
+        .xbut {
+            color: white;
+            border: 0px none black;
+            background: url('BlueButton.png');
+            background-repeat: no-repeat;
+        }
+
+    </style>
+    <script>
+        function doShow(p) {
+            //alert('h ttps://www.youtube.com/embed/TvGrX1UYTHo');
+            //h ttps://youtu.be/KEwVlw4H9Ks
+
+            //alert('x');
+
+            //document.getElementById("IF").src = 'https://www.youtube.com/embed/' + p;
+            alert(p);
+            alert('existing src' + document.getElementById("vidsrc").src);
+            alert('x');
+            document.getElementById("vidsrc").src = "http://www.mckinnonsoftwarez.co.uk/kappavideo/" + p;
+            alert('new src' + document.getElementById("vidsrc").src);
+            document.getElementById("video2").load();
+            document.getElementById("vidDiv").style.display = "block";
+            document.getElementById("searchDiv").style.display = "none";
+        }
+
+        function doBack() {
+            //alert('h ttps://www.youtube.com/embed/TvGrX1UYTHo');
+            //h ttps://youtu.be/KEwVlw4H9Ks
+
+            //alert('x');
+
+            //document.getElementById("IF").src = 'https://www.youtube.com/embed/' + p;
+            document.getElementById("vidDiv").style.display = "none";
+            document.getElementById("searchDiv").style.display = "block";
+        }
+
+        function domover() {
+            //document.getElementById("searchDiv").style.height = "500px";
+        }
+        function domout() {
+            //document.getElementById("searchDiv").style.height = "50px";
+        }
+
+        function doresize() {
+            //alert('x');
+            //document.body.clientHeight
+            //console.log("=============================");
+            //console.log("wh:" + window.innerHeight);
+            //console.log("ww:" + window.innerWidth);
+            //console.log("h:" + document.body.offsetHeight);
+            //console.log("w:" + document.body.offsetWidth);
+            //console.log("h:" + document.body.clientHeight);
+            //console.log("w:" + document.body.clientWidth);
+
+            //document.getElementById("vidDiv").style.height = (window.innerHeight - 100) + "px";
+            //document.getElementById("vidDiv").style.width = (window.innerWidth - 50) + "px";
+            //document.getElementById("IF").style.height = (window.innerHeight - 110) + "px";
+            //document.getElementById("IF").style.width = (window.innerWidth - 60) + "px";
+            //document.getElementById("searchDiv").style.height = (window.innerHeight - 100) + "px";
+            //document.getElementById("searchDiv").style.width = (window.innerWidth - 50) + "px";
+        }
+
+        //document.body.onresize = "doresize()";
+        //window.onresize = "doresize()";
+    </script>
+</head>
+<body onresize="doresize()">
+
+    <br />Kappa HowTo
+    <br />
+    <br />
+<div id="searchDiv" style="overflow:scroll;height:500px;width:400px" onmouseover="domover()" onmouseout="domout()">
+    <div style="">
+        <div>
+            
+            <input type="button" value="Show" onclick='doShow("ScreenRecorderProject15 xx.mp4")' />
+            Add Marketing task
+        </div>
+        <div>
+            <input type="button" value="Show" onclick='doShow("ScreenRecorderProject16 xx.mp4")' />
+            bbbbbbb
+        </div>
+    </div>
+</div>
+
+
+    <div  id="vidDiv" style="display:none;width:1100px;height:700px;background-color:aqua;">
+    <button onclick="doBack()">Back</button>
+    <br />
+
+        <video id="video2" controls style="width:100%;height:100%;" >
+            <source id="vidsrc" src="ScreenRecorderProject15 xx.mp4" type='video/mp4'>
+        </video>
+    </div>
+    
+
+
+
+</body>
+</html>
