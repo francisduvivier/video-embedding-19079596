@@ -20,6 +20,11 @@
         function doShow(p) {
             document.getElementById("changeableVideo").src=p;
         }
+        function showAndPlay(source){
+           var videoElement = document.getElementById("changeableVideo");
+            videoElement.src = source;
+            videoElement.play()
+        }
    </script>
 </head>
 <body >
@@ -34,6 +39,12 @@
         </div>
         <div>
             <button onclick='doShow("ScreenRecorderProject16.mp4")'>Show recording 16</button>
+        </div>
+        <div>
+            <button onclick='showAndPlay("ScreenRecorderProject15.mp4")' >Show and play recording 15</button>
+        </div>
+        <div>
+            <button onclick='showAndPlay("ScreenRecorderProject16.mp4")'>Show and play recording 16</button>
         </div>
 </div>
     <video id="changeableVideo" controls /> 
