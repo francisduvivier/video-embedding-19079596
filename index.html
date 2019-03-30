@@ -8,8 +8,12 @@
             height:auto;
         }
         #ytplayer {
-             width:"70vw";
-             height:"35vw";
+             width:70vw;
+             height:35vw;
+        }
+        .videoContainer {
+            border: 2px dotted;
+            margin: 1vh;
         }
     </style>
     <script>
@@ -18,23 +22,20 @@
         }
    </script>
 </head>
-<body onresize="doresize()">
+<body >
 
     <h1>Kappa HowTo</h1>
-<div id="searchDiv" style="overflow:scroll;height:500px;width:400px" onmouseover="domover()" onmouseout="domout()">
-    <div>
+
+<div class="videoContainer">
+    <h2>Changeable Video</h2>
+<div id="searchDiv">
         <div>
-            <button onclick='doShow("ScreenRecorderProject15.mp4")' >
-                Show recording 15
-            </button>
+            <button onclick='doShow("ScreenRecorderProject15.mp4")' >Show recording 15</button>
         </div>
         <div>
             <button onclick='doShow("ScreenRecorderProject16.mp4")'>Show recording 16</button>
         </div>
-    </div>
 </div>
-<div class="videoContainer">
-    <h2>Changeable Video</h2>
     <video id="changeableVideo" controls /> 
 </div>
 <div class="videoContainer">
